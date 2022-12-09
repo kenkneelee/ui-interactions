@@ -4,7 +4,7 @@
 }
 
 html {
-    background-color: grey;
+    background-color: #634638;
     font-family: "Courier New", Courier, monospace;
 }
 
@@ -84,7 +84,9 @@ header {
 
 .sliderImage {
     max-width:100%;
+    max-height:100%;
     display: flex;
+    object-fit: contain;
 }
 
 .sliderBtn {
@@ -111,13 +113,17 @@ header {
 .dots {
     position:absolute;
     bottom: 10%;
-    height: 1rem;
-    width: 5rem;
 }
 
 .dot {
-    background-color: aliceblue;
-    height:1rem;
-    width:1rem;
+    background-color: rgba(250, 235, 215, 0.5);
+    display:inline-block;
+    height:0.5rem;
+    width:0.5rem;
+    border-radius: 50%;
+    border: 2px solid rgb(250, 235, 215, 0.7);
+}
 
+.dot:hover{
+    background-color: rgba(250, 235, 215, 0.9);
 }
